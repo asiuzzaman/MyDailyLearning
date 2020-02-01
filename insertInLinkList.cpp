@@ -22,21 +22,28 @@ void printList(Node * root){
     printf("\n");
 }
 Node * insertFirst(Node * root,int data){
-    Node * newNode=(Node*) malloc(sizeof(Node));
-    newNode->data=data;
+    Node * newNode=creatNode(data);
     newNode->next=root;
     return newNode;
 }
 
+Node * insertLast(Node * root,int data){
+    Node * newNode=creatNode(data);
+    if(root==NULL) return newNode;
+    Node * temp=root;  // Just save the reference...
+    while(temp->next!=NULL){
+        temp=temp->next;
+    }
+    temp->next=newNode;
+    return root;
+}
 int main(){
    printf("Program Initialize....\n");
    Node * Root=NULL;
-   // insert 4 node...
-   for(int i=0;i<4;i++){
-       int data;
-       scanf("%d",&data);
-       Root=insertFirst(Root,data);
-
+   for(int i=0;i<5;i++){
+   int data;
+   scanf("%d",&data);
+   Root=insertLast(Root,data);
    }
    printList(Root);
 }
