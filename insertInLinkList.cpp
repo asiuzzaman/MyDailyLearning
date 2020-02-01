@@ -14,10 +14,29 @@ Node * creatNode(int data){
     return newNode;
 }
 
+void printList(Node * root){
+    while(root){
+        printf("%d ",root->data);
+        root=root->next;
+    }
+    printf("\n");
+}
+Node * insertFirst(Node * root,int data){
+    Node * newNode=(Node*) malloc(sizeof(Node));
+    newNode->data=data;
+    newNode->next=root;
+    return newNode;
+}
 
 int main(){
    printf("Program Initialize....\n");
-   Node * Root=creatNode(5);
-   printf("%d \n",Root->data);
+   Node * Root=NULL;
+   // insert 4 node...
+   for(int i=0;i<4;i++){
+       int data;
+       scanf("%d",&data);
+       Root=insertFirst(Root,data);
 
+   }
+   printList(Root);
 }
