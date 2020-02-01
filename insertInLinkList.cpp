@@ -10,7 +10,6 @@ Node * creatNode(int data){
     Node * newNode=(Node*) malloc(sizeof(Node));
     newNode->data=data;
     newNode->next=NULL;
-
     return newNode;
 }
 
@@ -37,6 +36,23 @@ Node * insertLast(Node * root,int data){
     temp->next=newNode;
     return root;
 }
+
+Node * insertAnyPositon(Node * root,int data,int pos){
+    if(pos==1) return insertFirst(root,data);
+    Node * newNode=root;
+    while(pos>2){
+        root=root->next;
+        pos--;
+    }
+   //printf("%d " ,root->data);
+    Node * temp=creatNode(data);
+ // printf("%d %d",root->next,temp->next);
+    temp->next=root->next;
+    root->next=temp;
+    return newNode;
+// Needs to return..
+}
+
 int main(){
    printf("Program Initialize....\n");
    Node * Root=NULL;
@@ -45,5 +61,9 @@ int main(){
    scanf("%d",&data);
    Root=insertLast(Root,data);
    }
+   printList(Root);
+   int data,pos;
+   scanf("%d%d",&data,&pos);
+   Root=insertAnyPositon(Root,data,pos);
    printList(Root);
 }
