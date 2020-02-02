@@ -44,13 +44,10 @@ Node * insertAnyPositon(Node * root,int data,int pos){
         root=root->next;
         pos--;
     }
-   //printf("%d " ,root->data);
     Node * temp=creatNode(data);
- // printf("%d %d",root->next,temp->next);
-    temp->next=root->next;
+    temp->next=root->next; //Linking
     root->next=temp;
     return newNode;
-// Needs to return..
 }
 
 int main(){
