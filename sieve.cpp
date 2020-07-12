@@ -1,35 +1,27 @@
 #include<bits/stdc++.h>
 using namespace std;
-#define ll long long int
-const ll mxn=90000003;
-vector<int>vec;
-void sieve(){
-static ll isPrime[mxn];
-   for(int i=1;i<=mxn;i++){
-      isPrime[i]=1;
-   }
-   isPrime[0]=isPrime[1]=0;
 
-   for(int i=2;i*i<=mxn;i++){
-      if(isPrime[i]){
-         for(int j=i*i;j<=mxn;j+=i){
-            isPrime[j]=0;
-         }
-      }
-   }
-   for(int i=2;i<mxn;i++){
-      if(isPrime[i]==1) vec.push_back(i); 
-   }
-}                
-int main() {
+vector<int>prime;
+void sieve(int n) 
+{   
+    bool vis[n];
+    for(int i=0;i<=n;i++){
+        vis[i]=false;
+    } 
+    int sq=sqrt(n);
+    for(int i=3;i<=sq;i+=2){
+        if(vis[i]==false){
+            for(int j=i*i;j<n;j+=2*i){
+                vis[j]=true;
+            }
+        }
+    }
+    prime.push_back(2);
+    for(int i=3;i<n;i+=2){
+        if(!vis[i]) prime.push_back(i);
+    }
+} 
 
-   sieve();
-   ll store[mxn];
-   
-   int q;cin>>q;
-   while(q--) {
-   int qth;cin>>qth;
-    cout<<vec[qth-1]<<endl;
-   }
-    
+int main(){
+   sieve(1000000);
 }
