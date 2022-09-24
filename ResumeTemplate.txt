@@ -1,0 +1,179 @@
+%------------------------
+% Resume Template
+% Author : Anubhav Singh
+% Github : https://github.com/xprilion
+% License : MIT
+%------------------------
+
+\documentclass[a4paper,20pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.530in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.45in}
+\addtolength{\textheight}{1in}
+
+\urlstyle{rm}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-10pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-6pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeItemWithoutTitle}[1]{
+  \item\small{
+    {\vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{#3} & \textit{#4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-3pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-----------------------------
+%%%%%%  CV STARTS HERE  %%%%%%
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{{\LARGE Md. Asiuzzaman }} & Email: \href{mailto:}{u1304006@student.cuet.ac.bd }\\
+  Specialization: Mobile Application Development \\
+  \href{https://xprilion.com}{LinkedIn: https://www.linkedin.com/in/md-asiuzzaman/} & Mobile:~~~+88-015-5895-1384 \\
+  \href{https://github.com/asiuzzaman/}{Github: ~~github.com/asiuzzaman} \\
+\end{tabular*}
+
+%-----------EDUCATION-----------------
+\section{~~Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Chittagong University of Engineering \& Technology}{Chittagong, Bangladesh}
+      {B.Sc in - Computer Science and Engineering;  GPA: 3.03}{March 2014 - Dec 2018}
+      {\scriptsize \textit{ \footnotesize{\newline{}\textbf{Courses:} Operating Systems, Data Structures, Analysis Of Algorithms, Artificial Intelligence, Machine Learning, Computer Networking, Database Management, Digital Login Design, Digital System Design, Numerical Analysis, Microprocessor, Computer Graphics}}}
+    \resumeSubHeadingListEnd
+	    
+\vspace{-5pt}
+\section{Skills Summary}
+	\resumeSubHeadingListStart
+	\resumeSubItem{Languages}{~~~~~~C, C++, JAVA, Swift, Python, JavaScript}
+	\resumeSubItem{Frameworks}{~~~~Android, iOS, TensorFlow, NodeJS}
+	\resumeSubItem{Tools}{~~~~~~~~~~~~~~Git, Android Studio, Xcode, SQLite}
+	\resumeSubItem{Data Structure}{LinkedList, Array, Stack, Queue, Vector, List, Heap,Set, Multiset, Map.}
+	\resumeSubItem{Algorithms}{~~~~~~Binary Search, BFS, DFS, Graph, Trie, BST, Dynamic Programming.}
+
+\resumeSubHeadingListEnd
+\vspace{-5pt}
+\section{Professional Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading{Sr. Software Engineer at Samsung R\&D Institute Bangladesh. Full-time}{Aug 2019 - Present}
+    {}\
+    { \textbf{SRBD} is an integral part of a worldwide network of R\&D centers set up by Samsung Electronics with the aim of becoming a major contributor to the Galaxy Ecosystem through application and service development for Mobile/Tablets, Wearables, and PCs.}\
+
+\resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------------
+\vspace{-5pt}
+\section{Projects}
+\resumeSubHeadingListStart
+\resumeSubItem{Smart Things iOS}{SmartThings also known as One-App is a product that is used to connect and control all Samsung’s smart home devices. It’s an iOS platform app that is developed primarily on swift and objective C. As it is compatible with 100s of smart home brands, one can control all sorts of smart home gadgets from one place including Refrigerator, Air Purifier, Robot Vaccum Cleaner, Hub, Speaker, Severals Sensors, and many more IoT devices.(April 2022 - present)}
+\begin{itemize}
+    \item Manage web plugins (download, update and manage) for webView.
+    \item Developed new API for supporting web plugin.
+    \item Download a plugin and launch it efficiently.
+    \item Resolved about 30+ issues with the least TAT count on the Plugin-Platform and Web-Plugin module.
+    \item Wrote unit test cases and documentation of code.
+\end{itemize}
+\vspace{2pt}
+\resumeSubItem{Smart Switch(Android)}{Smart Switch lets users conveniently transfer data between devices and migrate their data to their new phones. It can move your contacts, photos, videos, messages, and more specifically saved passwords also with just a few taps.(Dec 2021 - March 2022)}
+\begin{itemize}
+    \item iPhone's key chain extraction for finding the password which is saved in iCloud and transfer  iCloud data to the new device.
+    \item Python code conversion to Java.
+    \item Wrote unit test cases and documentation of code.
+\end{itemize}
+\vspace{2pt}
+\resumeSubItem{Mission Critical Push-To-Talk (Android)}{MCPTT has a push-to-talk functionality that “meets the requirements of public safety mission-critical voice communication, which include high availability/reliability, low latency, support for group calls and [one-to-one] calls, talker identification, device-to-device direct communications, emergency calling, clear audio quality, etc. Work with Android application for feature phone(Sonim XP5).(Aug 2019 - Aug 2021)}
+\begin{itemize}
+    \item UI design and implementation of conversation view.
+    \item Contributed on First-to-Answer-call \& Floor Control.
+    \item Log analysis for finding the issues and resolving these.
+    \item Open Source verification with Audit Workbench(AWB) tool \& Static analysis.
+\end{itemize}
+\vspace{2pt}
+\resumeSubHeadingListEnd
+\vspace{-5pt}
+\section{Publications}
+\resumeSubHeadingListStart
+\resumeSubItem{Book: Deep Learning on Web (Web Development, Deep Learning)}{Work in Progress book to be published by Packt Publishing in late 2019. Tech: Django, Python, AWS, GCP, Azure (November '18)}
+\vspace{2pt}
+\resumeSubItem{Book: Deep Learning on Mobile Devices (Flutter App Development, Deep Learning)}{Work in Progress book to be published by Packt Publishing in late 2019. Tech: Flutter, Android, Firebase, TensorFlow, Python, Dart (December '18)}
+\resumeSubHeadingListEnd
+\vspace{-5pt}
+%-----------Awards-----------------
+\section{Honors and Awards}
+\begin{description}[font=$\bullet$]
+\item {Level up to Advance in SRBD coding test - June, 2019}
+\vspace{-5pt}
+\item {SRBD best collaboration award - September, 2021 }
+\vspace{-5pt}
+\item {Best contribution in SmartThings iOS - July, 2022}
+
+\end{description}
+
+\vspace{-5pt}
+\section{Volunteer Experience}
+  \resumeSubHeadingListStart
+	\resumeSubheading
+    {Community Lead at Developer Student Clubs NSEC}{Kolkata, India}
+    {Conducted online and offline technical \& soft-skills training impacting over 3000 students.}{Jan 2019 - Present}
+\vspace{5pt}
+    % \vspace{10pt}\textbf{\large{Community Experience}}
+    \resumeSubheading
+    {Event Organizer at Google Developers Group Kolkata}{Kolkata, India}
+    {Organized events, conducted workshops and delivered workshops reaching over 7000 developers.}{Jan 2018 - Present}
+
+\resumeSubHeadingListEnd
+
+\end{document}
